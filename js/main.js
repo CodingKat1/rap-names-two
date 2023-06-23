@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 async function apiRequest() {
     const rapperName = document.querySelector('input').value
     try {
-        const response = await fetch(`https://inquisitive-pullover-duck.cyclic.app/${rapperName}`)
+        const response = await fetch(`https://inquisitive-pullover-duck.cyclic.app/api/${rapperName}`)
         const data = await response.json()
 
         console.log(data)
